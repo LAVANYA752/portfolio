@@ -1,0 +1,14 @@
+
+@for $i from 10px through 32px {
+     .icon-#{$i}{
+        width: #{$i};
+        height: $i;
+     }
+}
+// $size : 11px,20px;
+// @each $size in $size {
+//     .icon-#{$size}{
+//          width: #{$size};
+//          height: $size;
+//     }
+// }

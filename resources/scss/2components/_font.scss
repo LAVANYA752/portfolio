@@ -1,0 +1,5 @@
+@for $i from 10px through 32px {
+    .font-#{$i}{
+        font-size: $i;
+    }
+}

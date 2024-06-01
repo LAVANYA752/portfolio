@@ -22,19 +22,23 @@
         </div>
         <div class="container z-index-3">
             <div class="firstFold">
-                <div class="d-flex">
+                <div class="d-flex firstFoldInner">
                     <div class="stickyBlock">
                         <div class="stickyBlockInner">
                             <div class="profileImage">
-                                <img src="" alt="#">
+                                <img src="{{ Vite::asset('resources/image/myProfile.jpg')}}" alt="#">
                             </div>
-                            <div class="font-32px headingBlock">Lavanya</div>
+                            <div class="font-32px headingBlock">Lavanya S</div>
                             <div class="bgLight btnBlock">
-                                UI/UX Designer
+                                Web Designer
                             </div>
                             <div class="d-flex socialIconBlock">
                                 <div class="bgLight socialIcon vAlignMiddle">
-                                    @include('InnerBlock.themeSvg')
+                                    <!-- @include('InnerBlock.themeSvg') -->
+                                    <!-- <svg class="icon">
+                                        <use xlink:href="/svg/mySprite.svg#about"></use>
+                                      </svg> -->
+                                      
                                 </div>
                                 <div class="bgLight socialIcon vAlignMiddle">
                                     @include('InnerBlock.themeSvg')
@@ -48,27 +52,74 @@
                             </div>
                             <div class="detailedBlock">
                                 <div class="detailContent">
-                                     <div class="d-flex">
-                                        <div class="iconsBlock">
-
+                                     <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            @include('InnerBlock.themeSvg')
                                         </div>
-                                        <div>
+                                        <div class="text-left">
                                             <div class="subText">
-
+                                                 Phone  
                                             </div>
                                             <div class="mainText">
-
+                                                 9025598703
                                             </div>
                                         </div>
 
-                                     </div>
+                                     <!-- </div> -->
+                                </div>
+                                <div class="detailContent">
+                                     <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            @include('InnerBlock.themeSvg')
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                 Email  
+                                            </div>
+                                            <div class="mainText">
+                                                 slavanya752@gmail.com
+                                            </div>
+                                        </div>
+
+                                     <!-- </div> -->
+                                </div>
+                                <div class="detailContent">
+                                     <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            @include('InnerBlock.themeSvg')
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                 Location  
+                                            </div>
+                                            <div class="mainText">
+                                                Chennai - 600201
+                                            </div>
+                                        </div>
+
+                                     <!-- </div> -->
+                                </div>
+                                <div class="detailContent">
+                                     <!-- <div class="d-flex"> -->
+                                        <div class="iconFrame">
+                                            @include('InnerBlock.themeSvg')
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="subText">
+                                                Birthday
+                                            </div>
+                                            <div class="mainText">
+                                                Jun 03,2001
+                                            </div>
+                                        </div>
+
+                                     <!-- </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="rightSideBlock">
                         <div class="topNavBlock">
-                           
                             <ul class="nav  mb-3 topNavInnerBlock" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                   <div class="topNavInner active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
@@ -95,10 +146,8 @@
                                 </div>
                                 </li>
                             </ul>
-                        
                         </div>
                         <div class="bottomBlock">
-                            
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
@@ -231,16 +280,26 @@
                                     </div>
                                      <div class="formContainer pt-4">
                                           <div class="formContainerInner">
-                                               <div class="titleBlock">I'm Always Open To Discussing Produuct</div>
+                                               <div class="titleBlock">I'm Always Open To Discussing Product</div>
                                                <div class="mainText">design work or partnerships.</div>
 
                                                <form action="">
                                                    <div class="custamizeInput">
-                                                       <label for="" class="labelText"></label>
+                                                       <label for="" class="labelText">Name *</label>
                                                        <input type="text" class="inputBlock">
                                                    </div>
-
-
+                                                   <div class="custamizeInput">
+                                                       <label for="" class="labelText">Email *</label>
+                                                       <input type="text" class="inputBlock">
+                                                   </div>
+                                                   <div class="custamizeInput">
+                                                       <label for="" class="labelText">Message *</label>
+                                                       <!-- <input type="text" class="inputBlock"> -->
+                                                       <textarea name="" id="" class="textareaBlock inputBlock" rows="10" cols="30"></textarea>
+                                                   </div>
+                                                   <div class="submitBtn w-100">
+                                                       <button class="c-btn c-btn-primaryColor-outline ml-auto">Submit</button>
+                                                   </div>
                                                </form>
 
                                           </div>

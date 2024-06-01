@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/lavanyakarthik', function () {
+Route::get('/lavanya', function () {
     return view('demo');
 });
 Route::get('/portfolio', function () {

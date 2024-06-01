@@ -9,12 +9,15 @@
     "devDependencies": {
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
+        "npm-force-resolutions": "^0.0.10",
         "vite": "^5.0.0"
+
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
         "sass": "^1.76.0",
         "sass-loader": "^14.2.1",
-        "svg-sprite": "^2.0.4"
+        "svg-sprite": "^2.0.4",
+        "vite-plugin-svg-sprite": "^0.5.2"
     }
 }

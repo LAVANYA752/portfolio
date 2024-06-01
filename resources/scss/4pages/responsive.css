@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .firstFoldInner {
+    flex-direction: column;
+  }
+  .firstFold .stickyBlock {
+    width: 100%;
+  }
+  .firstFold .rightSideBlock {
+    width: 100%;
+  }
+  .firstFold .rightSideBlock .topNavBlock {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */

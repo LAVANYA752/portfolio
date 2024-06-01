@@ -1,0 +1,82 @@
+@media (max-width: 1200px) {
+    .containerBlock {
+        max-width: 1200px !important;
+    }
+}
+@media  (max-width: 768px) {
+    .containerBlock {
+        max-width: 720px !important;
+    }
+}
+@media (max-width: 576px) {
+    .containerBlock {
+        max-width: 540px !important;
+    }
+}
+
+// @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px)
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    .mainBlock {
+        .mainBlockInner {
+            .firstFold{
+                .rightSideBlock{
+                    .bottomBlock{
+                        padding: 60px 40px !important;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+@media screen and (max-width: 991px){
+
+    .mainBlock {
+        .mainBlockInner {
+            .firstFold{
+                &Inner{
+                    flex-direction: column;
+                }
+                .stickyBlock{
+                    width: 100% !important;
+                    position: unset !important;
+                    margin-bottom: 40px;
+                }
+                .rightSideBlock{
+                    width: 100% !important ;
+                    max-width: 100% !important;
+                    padding: unset !important;
+                    .topNavBlock{
+                        // display: none !important;
+                        width: 100% !important;
+                        .topNavInnerBlock{
+                            width: 100% !important;
+                        }
+                    }
+                    .bottomBlock{
+                        width: 100% !important;
+                        padding: 40px 30px !important;
+
+                        .gridBlockParent{
+                            grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+                        }
+                        .afterHeaderBlock{
+
+                            font-size: 30px !important;
+                            .afterHeaderBlockEle {
+                                // position: relative;
+    
+                                &::after {
+                                    width: 100px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
